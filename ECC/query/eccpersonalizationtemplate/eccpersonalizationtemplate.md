@@ -1,4 +1,4 @@
-# ECC Personalization 
+# ECC Personalization Template
 
 
 ### Introduction
@@ -297,11 +297,23 @@ Password: welcome1
 1.	Navigate to Functional Administrator Responsibility -> Core Services -> Menus
 2.	Click on “Create Navigation Menu”
 3.	Provide the below details in “Create Navigation Menu” page
-    *	Name: P2P Menu
-    *	Code: P2P_MENU
+    *	Name: 
+                                                       ```
+  	    <copy>P2P Menu</copy>
+            ```
+    *	Code: 
+                                                           ```
+  	    <copy>P2P_MENU</copy>
+            ```
     *	Under Menu Builder section, click on “+” icon to add below menu entry details:
-        *	Prompt: P2P Operations
-        *	Function: Fixed Assets Command Center Home
+        *	Prompt: 
+                                                                   ```
+  	    <copy>P2P Operations</copy>
+            ```
+        *	Function: 
+                                                                   ```
+  	    <copy>Fixed Assets Command Center Home</copy>
+            ```
 4.	Click on “Apply” button to create the menu
 
     ![Menu](../images/qa15.png "Menu")
@@ -312,13 +324,31 @@ Password: welcome1
 1.	Navigate to User Management Responsibility -> Responsibility
 2.	Click on “Create Responsibility”
 3.	Provide the below details in “Create Responsibility” page
-    *	Responsibility Name: Procure to Pay Operations Manager
-    *	Menu: P2P Menu
-    *	Responsibility Key: P2P\_ECC\_OP\_MGR
-    *	Application: Purchasing
+    *	Responsibility Name: 
+                                                               ```
+  	    <copy>Procure to Pay Operations Manager</copy>
+            ```
+    *	Menu: 
+                                                               ```
+  	    <copy>P2P Menu</copy>
+            ```
+    *	Responsibility Key: 
+                                                               ```
+  	    <copy>P2P_ECC_OP_MGR</copy>
+            ```
+    *	Application: 
+                                                                   ```
+  	    <copy>Purchasing</copy>
+            ```
     *	Under Groups section, provide below details:
-        *	Data Group Name: Standard
-        *	Application: Purchasing
+        *	Data Group Name: 
+                                                                   ```
+  	    <copy>Standard</copy>
+            ```
+        *	Application: 
+                                                                   ```
+  	    <copy>Purchasing</copy>
+            ```
 4.	Click on “Create” button to create the responsibility
 
     ![Responsibility](../images/ss16.png "Responsibility")
@@ -329,15 +359,30 @@ Password: welcome1
 1.	Navigate to User Management Responsibility -> Roles & Role Inheritance
 2.	Click on “Create Role”
 3.	Provide the below details in “Create Role” page
-    *	Application: Purchasing
-    *	Role Code: UMX|P2P\_ECC\_ACCESS\_ROLE
-    *	Display Name: P2P Access Role
-    *	Description: P2P Access Role
+    *	Application: 
+                                                               ```
+  	    <copy>Purchasing</copy>
+            ```
+    *	Role Code: 
+                                                               ```
+  	    <copy>UMX|P2P_ECC_ACCESS_ROLE</copy>
+            ```
+    *	Display Name: 
+                                                               ```
+  	    <copy>P2P Access Role</copy>
+            ```
+    *	Description: 
+                                                               ```
+  	    <copy>P2P Access Role</copy>
+            ```
 4.	Click on “Create Grant” button
 5.	Click on “Save and Proceed” button in the confirmation dialog to create the grant
 6.	Now, the user is navigated to “Create Grant” page
 7.	Provide the below details:
-    *	Name: P2P Grant
+    *	Name: 
+                                                               ```
+  	    <copy>P2P Grant</copy>
+            ```
     *	Under security context section, Responsibility: Procure to Pay Operations Manager
     *	Click on “Next” button
     *	Provide the permission set as “P2P Permission Set”
@@ -452,8 +497,14 @@ Password: welcome1
     ![Render Page](../images/gg04.png "Render Page")
 
 8.	Add the ECC Page FND function to respective Rich Container sections
-    *	Destination Function: PO\_PCC\_ECC\_REQUISITIONS
-    *	Title: Requisitions
+    *	Destination Function: 
+                                                               ```
+  	    <copy>PO_PCC_ECC_REQUISITIONS</copy>
+            ```
+    *	Title: 
+                                                               ```
+  	    <copy>Requisitions</copy>
+            ```
     *   Rendered: true
 
 
@@ -461,7 +512,10 @@ Password: welcome1
     ![FND Function](../images/gg06.png "FND Function")
 
 9.	Set the subtab title by clicking on Personalize icon for respective “Sub tab link”
-    * Text: Requisitions
+    * Text: 
+                                                               ```
+  	    <copy>Requisitions</copy>
+            ```
     * Rendered: TRUE
 
 
@@ -469,8 +523,65 @@ Password: welcome1
     ![Subtab Title](../images/gg08.png "Subtab Title")
 10.	Click on “Return to Application” to access the dashboard
 11.	Now, you can view the Requisitions dashboard
-12.	Similarly, you can add the other remaining dashboards by following the same steps as mentioned above 
-    ![Requisitions Dashboard](../images/scratchpadupdated15.png "Requisitions Dashboard")
+12.	Similarly, you can add the other remaining dashboards by using the below FND functions 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+style="white-space:pre-wrap; word-wrap:break-word"
+</style>
+</head>
+<body>
+
+
+<table>
+  <tr>
+    <th></th>
+    <th>FND Function</th>
+    <th>Permission Set</th>
+    
+  </tr>
+
+  <tr>
+    <td>Requisitions dashboard</td>
+    <td>PO_PCC_ECC_REQUISITIONS</td>
+    <td>PO_PCC_ECC_PS</td>
+  </tr>
+  <tr>
+    <td>Orders dashboard</td>
+    <td>PO_PCC_ECC_ORDERS</td>
+    <td>PO_PCC_ECC_PS</td> 
+  </tr>
+  <tr>
+    <td>Receiving dashboard</td>
+    <td>INV_ECC_RCV</td>
+    <td>INV_ECC_RCV_ACCESS_PS</td>
+  </tr>
+    <tr>
+    <td>Supplier Balance dashboard</td>
+    <td>AP_ECC_SUPP_BALANCE</td>
+    <td>AP_ECC_ACCESS_PS</td>
+</table>
+</body>
+</html>
+
+![Requisitions Dashboard](../images/scratchpadupdated15.png "Requisitions Dashboard")
 
 
 
