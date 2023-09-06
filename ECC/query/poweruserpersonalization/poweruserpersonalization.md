@@ -122,7 +122,7 @@ Password: welcome1
 
 
 
-5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
+5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize dashboard" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
@@ -184,7 +184,7 @@ Password: welcome1
     ![Pivot view](../images/switch77.png "Pivot view")
 
 
-25. Click on the "i" icon and then the "Personalize" button to disable Personalization mode.
+25. Click on the "i" icon and then the "Personalize dashboard" button to disable Personalization mode.
     ![Pivot view](../images/switch2.png "Pivot view")
 
 
