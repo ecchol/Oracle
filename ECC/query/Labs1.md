@@ -121,7 +121,7 @@ For more information please refer [Set up VCN] (https://github.com/oracle-livela
 28. In Destination port add 6080, in Source CIDR add 0.0.0.0/0 and click on "Add Ingress rules"
 
     ![Image alt text](images/whitelisting.png)
-29. Once the instance is up and running you can access livelabs(VNC)  via the following URL 
+29. Once the instance is up and running you can access LiveLabs(VNC)  via the following URL 
 
 <b>Note:</b> Replace {PUBLICIP} with the Public IP of the instance you copied before
 
@@ -200,7 +200,7 @@ Example: If you have set Memory as 8gb instead of 16gb then you should go to the
   
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Centres- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 

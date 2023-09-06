@@ -91,6 +91,8 @@ This lab assumes you have:
 
 ## Task 1: Hands on demo of ECC Receivables
 
+**Goal:** Investigate Past-due invoices
+
 1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
 
 
@@ -115,7 +117,10 @@ Password: welcome1
 Due Date, Transaction Currency, Amount Due and Bill-To Customer.
     ![Receivables](../images/r5z.png "Receivables")
 
-10. In the Transactions List Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with ebs. Click on the hamburger icon within the preview, to view the customer claim clearly.
+10. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
+
+
+11. In the Transactions List Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with ebs. Click on the hamburger icon within the preview, to view the customer claim clearly.
 
     ![Receivables](../images/r099.png "Receivables")
     
@@ -142,13 +147,11 @@ Password: welcome1
 
 3. You will see the "Account Analysis" dashboard and within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. Replace the existing period name with "Jun-23".
         ![Personalize dashboard](../images/r6z.png "Personalize dashboard")
+4. We will explore "Expenses" by clicking on Account type as expenses, in the "Period activities" chart
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
 
-4. We will explore "Expenses" by drilling down on expenses 
+4. Let's explore "Employee expenses" category
         ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
-
-
-5. Let's explore "Employee expenses" category
         ![Personalize dashboard](../images/fg30.png "Personalize dashboard")
 6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further.
         ![Personalize dashboard](../images/fg4.png "Personalize dashboard")
@@ -213,7 +216,7 @@ You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

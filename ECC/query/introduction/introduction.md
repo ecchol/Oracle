@@ -2,9 +2,9 @@
 
 ## About this Workshop
 
-The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through all of the steps and processes that a typical ECC Developer would do, it has a show and tell of the ECC installion process, hands on labs for creating applications, data sets, pages, components etc.
+The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through all of the steps and processes that a typical ECC Developer would do, it has a show and tell of the ECC installation process, hands on labs for creating applications, data sets, pages, components etc.
 
-There is also an instructer led lab where you will learn about several advanced features of Oracle Enterprise Command Center with examples.
+There is also an instructor led lab where you will learn about several advanced features of Oracle Enterprise Command Center with examples.
 
 This lab gives a brief introduction to Oracle Enterprise Command Center Framework
 
@@ -32,7 +32,7 @@ Oracle E-Business Suite users navigate transactional information using interacti
 
 ## Task 2: Add public key in reservation of workshop
 
-Whether running on own tenancy or livelabs sandbox, you nee to go through this step. Before reserving the lab instance, download the SSH keys from this location: [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) 
+Whether running on own tenancy or livelabs sandbox, you need to go through this step. Before reserving the lab instance, download the SSH keys from this location: [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) 
 Unzip the downloaded zip file.
 Go to the extract directory and open public key ecchol.pub. Copy the file content (key value) and paste it in as per the screenshot below.
      ![Paste Public SSH key](../images/image112.png " ")
@@ -60,7 +60,7 @@ You may now **proceed to the next lab**
   
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

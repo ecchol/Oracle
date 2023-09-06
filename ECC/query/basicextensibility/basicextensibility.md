@@ -54,7 +54,7 @@ Password: welcome1
     - Chart title: Spend Type
     - Data set: Indirect Procurement 
     - Chart type: Bar
-    - Dimension: Spend type (series dimension) and Spend Date Year (Group dimension)
+    - Dimension: Spend type (series dimension) and Spend Date (Year) (Group dimension)
     - Metric: Attribute (Spend amount) and Aggregation (Sum) 
 
 14. Click preview 
@@ -125,7 +125,7 @@ Password: welcome1
           ![Add Function to Menu](../images/b115.png "Add Function to Menu")
      * Clear Application Cache:
         * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-        * Click on “Clear All Cache” button
+        * Click on “Clear All Cache” button and then click on "Yes"
           ![Clear Cache](../images/ss110.png "Clear Cache")
  
 
@@ -157,6 +157,7 @@ Password: welcome1
           ![Update Rich Container Details](../images/b119.png "Update Rich Container Details")
 
 6. Click on “Return to Application” to access the dashboard
+          ![Indirect Procurement Dashboard](../images/jk1.png " Indirect Procurement Dashboard")
           ![Indirect Procurement Dashboard](../images/b1110.png " Indirect Procurement Dashboard")
 
 
@@ -164,7 +165,7 @@ Password: welcome1
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

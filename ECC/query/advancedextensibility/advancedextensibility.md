@@ -37,7 +37,7 @@ A data set is both a logical and a physical grouping of attributes to support bu
 
 
 At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system. Unique key is used to identify records and data sets.
-* ECC\_SPEC\_ID column identifies each data set, it must have an assignment from exactly one attribute and must be named “ECC\_SPEC\_ID", this attribute must be unique and single assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
+* ECC\_SPEC\_ID column is unique and single assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
 
 
 Contents of a data set can be exported with attribute keys and attribute display names as headers. Each attribute stored in the data set is controlled by metadata properties that specify its behavior on the user interface. Additional value-add features such as calculations, bucketing, and precedence rules can also be specified.
@@ -483,7 +483,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>sqlplus apps/apps</copy>
             ```
 
-    * The package specification and body files are present under “/u01/live_labs/11470/lab_files/lab5/task5”  directory
+    * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task5”  directory
 
     * Compile the package using below commands:
                                                  ```
@@ -660,16 +660,15 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
 * Once the changes are completed, compile the package using following steps:
     * Go back to the Terminal window
-        * Connect to the environment using SSH (Details are mentioned in “Get Started -> Appendix: Connect Remotely Using SSH section”) 
-        * Source the EBS edition using below command:
+    * Source the EBS edition using below command:
                                                                                      ```
   	    <copy>source /u01/install/APPS/EBSapps.env run</copy>
             ```
-        * Connect to EBS Database using below command:
-
+    * Connect to EBS Database using below command:
+                                                                                         ```
   	    <copy>sqlplus apps/apps</copy>
-
-        * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task6”  directory
+            ```
+    * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task6”  directory
 
     * Compile the package using below commands:
                                                                                      ```
@@ -712,7 +711,7 @@ You may now **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

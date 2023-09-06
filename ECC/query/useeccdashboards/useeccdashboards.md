@@ -167,7 +167,7 @@ Password: welcome1
 
 ## Task 3: Hands on demo of ECC Procurement
 
-
+**Goal:** Investigate individual order details
 1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
 
     ```
@@ -198,7 +198,7 @@ Password: welcome1
 
 ## Task 4: Hands on demo of ECC Inventory Management 
 
-**Goal:** Investigate picks to find a common cause. 
+**Goal:** Investigate and resolve problematic sales orders
 
 
 1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
@@ -238,7 +238,7 @@ You may now **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
