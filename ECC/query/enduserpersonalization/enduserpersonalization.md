@@ -191,14 +191,8 @@ Password: welcome1
         ![Personalize dashboard](../images/y6c.png "Personalize dashboard")
         ![Personalize dashboard](../images/f12.png "Personalize dashboard")
 
-13. Right click on the node with debit=11200 and then click on "Drill down to subledger journal"
-        ![Personalize dashboard](../images/f13.png "Personalize dashboard")
 
-
-14. Click on "View transaction" 
-        ![Personalize dashboard](../images/f14.png "Personalize dashboard")
-
-14. After reviewing journal lines, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
+14. From this diagram, you can get to know the journal line details. Now, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
 * Users can save frequently-applied filters or preferred filters as saved searches, allowing other users to reuse them. All saved searches are context-sensitive to the page and are part of the search suggestions. 
 * The list of saved searches appears when the focus is on the search component. Saved searches are searchable by their titles, filter attributes, and filter values. Three types of saved searches are available for users: seeded, public, and private. 
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 
