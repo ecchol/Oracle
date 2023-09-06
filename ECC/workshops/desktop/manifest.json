@@ -20,10 +20,6 @@
       "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
     },
     {
-      "title": "Prerequisites",
-      "filename": "../../query/prereq/prereq.md"
-    },
-    {
       "title": "Lab 1: Use ECC Dashboards",
       "filename": "../../query/useeccdashboards/useeccdashboards.md"
     },

@@ -115,10 +115,7 @@ Password: welcome1
                                                ```
   	    <copy>PO PCC ECC Role</copy>
             ```
-        * Responsibility: 
-                                        ```
-  	    <copy>Purchasing, Vision Operations (USA)</copy>
-            ```
+        * Responsibility: Purchasing, Vision Operations (USA)
     * Click on the “Next” button
     * Provide the “Set”:
                                                    ```
@@ -129,7 +126,8 @@ Password: welcome1
 
     * Clear Application Cache:
         * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-        * Click on “Clear All Cache” button and Click on "Yes"
+        * Click on “Clear All Cache” button
+        * Click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
 **Personalize ECC Personalization Template to add Local Agreements dashboard**
@@ -458,7 +456,7 @@ Password: welcome1
 **Clear Application Cache:**
 
 1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-2.	Click on “Clear All Cache” button and then click on "Yes"
+2.	Click on “Clear All Cache” button
 
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
@@ -554,26 +552,31 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
 <table>
   <tr>
-    <th>Title</th>
+    <th></th>
     <th>FND Function</th>
+    <th>Permission Set</th>
     
   </tr>
 
   <tr>
-    <td>Requisitions</td>
+    <td>Requisitions dashboard</td>
     <td>PO_PCC_ECC_REQUISITIONS</td>
+    <td>PO_PCC_ECC_PS</td>
   </tr>
   <tr>
-    <td>Orders</td>
+    <td>Orders dashboard</td>
     <td>PO_PCC_ECC_ORDERS</td>
+    <td>PO_PCC_ECC_PS</td> 
   </tr>
   <tr>
-    <td>Receiving</td>
+    <td>Receiving dashboard</td>
     <td>INV_ECC_RCV</td>
+    <td>INV_ECC_RCV_ACCESS_PS</td>
   </tr>
     <tr>
-    <td>Supplier Balance</td>
+    <td>Supplier Balance dashboard</td>
     <td>AP_ECC_SUPP_BALANCE</td>
+    <td>AP_ECC_ACCESS_PS</td>
 </table>
 </body>
 </html>
