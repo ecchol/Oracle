@@ -689,7 +689,6 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
     * Click on the Edit icon
     * Click on the “Security Rule” tab
-    * Provide the security handler name as “XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.GetFilterAttributeValuesPO”
     * Enable the “Enabled” checkbox. This will ensure that the security rules are applied before accessing the data.
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")

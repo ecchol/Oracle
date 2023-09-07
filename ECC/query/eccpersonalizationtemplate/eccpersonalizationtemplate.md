@@ -323,7 +323,8 @@ Password: welcome1
 
 **Create a new Responsibility:**
 
-1.	Navigate to User Management Responsibility -> Responsibility
+1.	Navigate to User Management -> Responsibility
+    ![User management](../images/ko1.png "User management")
 2.	Click on “Create Responsibility”
 3.	Provide the below details in “Create Responsibility” page
     *	Responsibility Name: 
@@ -358,7 +359,7 @@ Password: welcome1
 
 **Create a new Access role and Grant:**
 
-1.	Navigate to User Management Responsibility -> Roles & Role Inheritance
+1.	Navigate to User Management -> Roles & Role Inheritance
 2.	Click on “Create Role”
 3.	Provide the below details in “Create Role” page
     *	Application: 
@@ -424,11 +425,18 @@ Password: welcome1
 
     ![Assign Role to Responsibility](../images/ss111.png "Assign Role to Responsibility")
 
-4.  Click on + icon under “Add node”	
-5.  Then search for “P2P Access Role” and click on “Go” button
-6.	Add the access role to the responsibility
+4.  Click on + icon under “Add node”
+    ![Assign Role to Responsibility](../images/addnode.png "Assign Role to Responsibility")
 
+5.  Then search for “P2P Access Role” and click on “Go” button
+    ![Assign Role to Responsibility](../images/accessrole1.png "Assign Role to Responsibility")
+
+
+7. Add the access role to the responsibility by clicking on the icon under quick select column
+    ![Assign Role to Responsibility](../images/accessrole2.png "Assign Role to Responsibility")
+8. We have successfully assigned the access role to the responsibility
     ![Assign Role to Responsibility](../images/ss112.png "Assign Role to Responsibility")
+
 
 **Assign the Responsibility to User:**
 
