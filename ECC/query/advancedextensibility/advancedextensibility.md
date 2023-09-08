@@ -514,6 +514,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
         * Connection Name: ebsdb
             ![Configure Load Rules](../images/a1122.png "Configure Load Rules")
+    * Select the icon as "Procurement"
     * Click on the “Save” button
     * Navigate to “Data Load Submission” menu
     * Provide the below details to submit a full load for the local agreements dataset
@@ -692,6 +693,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     * Enable the “Enabled” checkbox. This will ensure that the security rules are applied before accessing the data.
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")
+    * Select the icon as "Procurement"
     * Click on the “Save” button
     * Navigate to the XX Local Agreements dashboard
         * The dashboard will error out stating that the user is not authorized to access the dataset using the logged in responsibility
