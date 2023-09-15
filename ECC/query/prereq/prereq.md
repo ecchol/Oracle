@@ -5,7 +5,7 @@
 
 This lab is with regards to ECC Installation and is a prerequisite to the rest of the labs. 
 
-*Estimated Lab Time:* 20 minutes
+Estimated Time: 20 minutes
 
 ### Objectives
 -   Install ECC
