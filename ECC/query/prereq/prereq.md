@@ -16,7 +16,7 @@ This lab is with regards to ECC Installation and is a prerequisite to the rest o
 
 1. Open the no-vnc url , open chrome broswer and paste the following URL
                                                       ```
-  <copy>https://media.githubusercontent.com/media/ecchol/Oracle/my-new-branch/eccsetup.zip?download=true</copy>
+  <copy>https://drive.google.com/uc?id=1p-CdZqWeoER-VmFZi5AIIcv_PVQf41ep&export=download</copy>
             ```
 
 2. Open Terminal and enter the following command
