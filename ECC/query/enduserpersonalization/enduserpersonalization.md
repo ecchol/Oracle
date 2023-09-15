@@ -107,28 +107,31 @@ Password: welcome1
     ![Receivables](../images/r2z.png "Receivables")
 
 
-6. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options for Summarization Bar and then only enable Ledger, Currency and Past-due invoices. Click outside the runtime options of Summarization Bar for changes to reflect.
+4. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar, enable the below mentioned items, and then click outside the runtime options of Summarization Bar for changes to reflect.
+      * Ledger
+      * Currency
+      * Past-Due Balance
+      
     ![Receivables](../images/r3z.png "Receivables")
-
     ![Receivables](../images/r4z.png "Receivables")
 
 
-9. Scroll down to the Transactions List Results Table and click on the "Hide/Show Columns" icon to only focus on attributes we are interested in i.e., Transaction number, Transaction Type, Transaction Date, 
-Due Date, Transaction Currency, Amount Due and Bill-To Customer.
+5. Scroll down to the Transactions List Results Table and click on the "Hide/Show Columns" icon to only focus on attributes as mentioned below. Then, click outside the Hide/Show columns of Results Table for changes to reflect.
+     * Transaction number
+     * Transaction Type
+     * Transaction Date
+     * Due Date
+     * Transaction Currency
+     * Amount Due
+     * Bill-To Customer
     ![Receivables](../images/r5z.png "Receivables")
 
-10. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
-
-
-11. In the Transactions List Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with ebs. Click on the hamburger icon within the preview, to view the customer claim clearly.
+6. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
+7. In the "Transactions List" Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with EBS. Click on the hamburger icon within the preview, to view the customer claim clearly.
 
     ![Receivables](../images/r099.png "Receivables")
     
-
     ![Receivables](../images/r012.png "Receivables")
-
-
-
 
 
 ## Task 2: Hands on demo of ECC General Ledger
@@ -142,15 +145,16 @@ Due Date, Transaction Currency, Amount Due and Bill-To Customer.
   	 Username: eccuser
 Password: welcome1
     ```
-2. You will see the below screen,  From **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
+2. You will see the below screen,  from **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
-3. You will see the "Account Analysis" dashboard and within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. Replace the existing period name with "Jun-23".
+3. You will see the "Account Analysis" dashboard. And, within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. Replace the existing period name with "Jun-23".
         ![Personalize dashboard](../images/r6z.png "Personalize dashboard")
 4. We will explore "Expenses" by clicking on Account type as expenses, in the "Period activities" chart
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
 
-4. Let's explore "Employee expenses" category
+
+5. Let's explore "Employee expenses" category
         ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg30.png "Personalize dashboard")
 6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further.
@@ -160,7 +164,7 @@ Password: welcome1
         ![Personalize dashboard](../images/fg5.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg6.png "Personalize dashboard")
 
-8. Previous period seems very low compared to what we were inestigating, let's compare current period amount with same period last year to check for seasonality i.e., compare Jun-23 with Jun-22. To do that, click on the "Period Name" breadcrumb to add Jun-22
+8. Previous period seems very low compared to what we were investigating, let's compare current period amount with same period last year to check for seasonality i.e., compare Jun-23 with Jun-22. To do that, click on the "Period Name" breadcrumb to add Jun-22
         ![Personalize dashboard](../images/fg7.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg8.png "Personalize dashboard")
 
@@ -169,7 +173,8 @@ Password: welcome1
         ![Trellis column disable](../images/trellis2.png "Trellis column disable")
 
 
-10. Let's add the Trellis column "Fiscal Year" back again from the same runtime options. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following and click on "update" within runtime options
+10. Let's add the Trellis column "Fiscal Year" back again from the same runtime options. 
+11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following and click on "update" within runtime options
     * Dimensions:
         * Company
         * Department
@@ -181,18 +186,18 @@ Password: welcome1
         ![Personalize dashboard](../images/fg9.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg10.png "Personalize dashboard")
 
-10. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
+12. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-11. Click on the runtime options for the Pivot view and select only Period activity as the metric
+13. Click on the runtime options for the Pivot view and select only Period activity as the metric, and then click on "Update"
         ![Personalize dashboard](../images/fg12.png "Personalize dashboard")       
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
-12. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690. Click on the diagram icon to navigate to the diagram view
+14. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690. Click on the diagram icon to navigate to the diagram view
         ![Personalize dashboard](../images/y6c.png "Personalize dashboard")
         ![Personalize dashboard](../images/f12.png "Personalize dashboard")
 
 
-14. From this diagram, you can get to know the journal line details. Now, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
+15. From this diagram, you can get to know the journal line details. Now, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
 * Users can save frequently-applied filters or preferred filters as saved searches, allowing other users to reuse them. All saved searches are context-sensitive to the page and are part of the search suggestions. 
 * The list of saved searches appears when the focus is on the search component. Saved searches are searchable by their titles, filter attributes, and filter values. Three types of saved searches are available for users: seeded, public, and private. 
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 

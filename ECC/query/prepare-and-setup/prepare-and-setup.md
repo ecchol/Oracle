@@ -7,7 +7,7 @@ This lab is optional and is only required if you want to run this workshop on yo
 
 This Lab will show you how to download the Oracle Resource Manager (ORM) stack zip file needed to setup the resource needed to run this workshop and will show you how to set up a Resource Manager stack that will generate the Oracle Cloud objects needed to run your workshop. 
 
-*Estimated Lab Time:* 25 minutes
+Estimated Time: 25 minutes
 
 ### Objectives
 -   Download ORM stack
@@ -206,6 +206,55 @@ For ease of execution of this workshop, your VM instance has been pre-configured
   This should take you directly to your remote desktop in a single click.
 
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
+
+  If you see the below error, we recommend to bounce EBS services, follow below steps:
+  ![Click Remote Desktop URL](../images/servicedown.png " ")
+  a. Open the terminal and source EBS apps running instance, by using below command  
+      ```text
+    <copy>
+    source /u01/install/APPS/EBSapps.env run
+    </copy>
+    ```
+
+  b. Stop the EBS services: 
+    - Navigate to $ADMIN\_SCRIPTS\_HOME
+      ```text
+      <copy>
+      cd $ADMIN_SCRIPTS_HOME
+      </copy>
+      ```
+    - Stop all EBS services using below command
+      ```text
+      <copy>
+      ./adstpall.sh
+      </copy>
+      ```
+    - Use below passwords when prompted:
+        - APPS Username: **apps**
+        - APPS Password: **apps**
+        - Weblogic Server Password: **welcome1**
+
+  ![Click Remote Desktop URL](../images/stopall.png " ")
+
+  c. Now, start the EBS services:
+    - Navigate to $ADMIN\_SCRIPTS\_HOME
+      ```text
+      <copy>
+      cd $ADMIN_SCRIPTS_HOME
+      </copy>
+      ```
+    - Start all EBS services using below command
+      ```text
+      <copy>
+      ./adstrtal.sh
+      </copy>
+      ```
+    - Use below passwords when prompted:
+        - APPS Username: **apps**
+        - APPS Password: **apps**
+        - Weblogic Server Password: **welcome1**
+
+  ![Click Remote Desktop URL](../images/startall.png " ")
 
     >**Note:** While rare, you may see an error on the browser - “*Deceptive Site Ahead*” or similar depending on your browser type as shown below.
 

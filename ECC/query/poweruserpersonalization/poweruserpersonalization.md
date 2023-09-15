@@ -122,7 +122,7 @@ Password: welcome1
 
 
 
-5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize dashboard" button.
+5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize Dashboard" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
@@ -139,9 +139,10 @@ Password: welcome1
    ![Configure Tab layout](../images/sup9.png "Configure Tab layout")
 
 12. Click "Preview" and then click "Save"
+   ![Add Bank Balance Tab](../images/addbankbalancetab.png "Add Bank Balance Tab")
    ![Save Tab component](../images/sup10.png "Save Tab component")
 
-13. Add a chart component inside the new tab "Bank Balance" to highlight paid amount per bank account
+13. Add a chart component inside the new tab "Bank Balance", by dragging and dropping the chart component within the tab layout, to highlight paid amount per bank account
 
     - Data set: Payments 
     - Chart type: Bar
@@ -184,9 +185,9 @@ Password: welcome1
     ![Pivot view](../images/switch77.png "Pivot view")
 
 
-25. Click on the "i" icon and then the "Personalize dashboard" button to disable Personalization mode.
     ![Pivot view](../images/switch2.png "Pivot view")
 
+25. Finally, click on the "i" icon and then the "Personalize Dashboard" button to disable Personalization mode.
 
 ## Task 3: Personalize Account Analysis dashboard
 

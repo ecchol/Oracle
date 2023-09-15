@@ -1,4 +1,4 @@
-# ECC Personalization Template
+# ECC Personalization Template (Optional)
 
 
 ### Introduction
@@ -36,36 +36,11 @@ This lab assumes you have:
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Create a new FND Function for Local Agreements Dashboard:
-    * Navigate to Functional Administrator -> Core Services -> Functions
-    * Search with Code as: 
-                ```
-  	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
-            ```
-    * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_AGREEMENTS
-        ![Duplicate Function](../images/a11s1.png "Duplicate Function")
-
-    * Change the details in the duplicate function page as mentioned below:
-        * Name: 
-                        ```
-  	    <copy>PO PCC ECC Local Agreements Page</copy>
-            ```
-        * Code: 
-                                ```
-  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
-            ```
-        ![Duplicate Function](../images/a11s2.png "Duplicate Function")
-
-    * Click on the “Continue” button
-    * Change the value for HTML Call to 
-                                    ```
-  	    <copy>GWY.jsp?targetAppType=ECC&targetPage=web/eccapp/po_pcc/xx-pcc-local-agreements</copy>
-            ```
-    * Click on the “Submit” button
-        ![Create Function](../images/a11s3.png "Create Function") 
+2.	The FND Function for Local Agreements Dashboard has been created in Lab 5 - Task 7
 
 3.	Add ECC Personalization Template to Procurement Command Center Menu:
-    * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
+        ![Menus](../images/menus.png "Menus")
     * Search with code as 
                                         ```
   	    <copy>PO_PCC_MAIN</copy>
@@ -83,7 +58,8 @@ Password: welcome1
         * Click on “Apply” button to save the menu
         ![Add Function to Menu](../images/a11s24.png "Add Function to Menu")
 3.	Create Permission Set for Local Agreements:
-    * Navigate to Functional Administrator Responsibility -> Security -> Permission Sets
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
+        ![Permission Sets](../images/permissionsetsteps.png "Permission Sets")
     * Click on the “Create Permission Set” button
     * Provide the below details in “Create Permission Set” page
         * Name: 
@@ -102,15 +78,18 @@ Password: welcome1
     * Click on “Apply” button to create the permission set
         ![Create Permission Set](../images/a11s5.png "Create Permission Set")
 4.	Create Grant for Local Agreements:
-    * Navigate to Functional Administrator Responsibility -> Security -> Grants
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Grants
+        ![Grants](../images/grants.png "Grants")
     * Click on “Create Grant” button
     * Provide the below details:
         * Name: 
                                ```
   	    <copy>Procurement Local Agreements Grant</copy>
             ```
-        * Grantee Type: Group of Users
-
+        * Grantee Type: 
+                                       ```
+  	    <copy>Group of Users</copy>
+            ```
         * Grantee: 
                                                ```
   	    <copy>PO PCC ECC Role</copy>
@@ -127,9 +106,10 @@ Password: welcome1
     * Click on the “Next” button and then “Finish” button
         ![Create Grant](../images/a11s6.png "Create Grant")
 
-    * Clear Application Cache:
-        * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-        * Click on “Clear All Cache” button and Click on "Yes"
+5. Clear Application Cache:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
+    * Click on “Clear All Cache” button and then click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
 **Personalize ECC Personalization Template to add Local Agreements dashboard**
@@ -140,6 +120,7 @@ Password: welcome1
 Password: welcome1
     ```
 2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Local Agreements
+	![Local Agreements Menu](../images/localagreementsmenu.png "Local Agreements Menu")
         ![Local Agreements](../images/a127.png "Local Agreements")
 3. Click on EBS Settings icon
 4. Click on “Personalize Page” option
@@ -172,7 +153,7 @@ Password: welcome1
 8. Set the subtab title by clicking on Personalize icon for first “Sub tab link”
         ![Update Tab Title](../images/a133.png "Update Tab Title")
 
-9. Update the “Text” property to “Local Agreements” and click on "Apply"
+9. Update the “Text” property to “Local Agreements”, and then click on the "Apply" button
         ![Update Tab Title](../images/a134.png "Update Tab Title")
 
 10. Click on “Return to Application” to access the dashboard
@@ -269,7 +250,8 @@ Password: welcome1
 
 **Create a new Permission Set:**
 
-1.	Navigate to Functional Administrator Responsibility -> Security -> Permission Sets
+1.	Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
+        ![Permission Sets](../images/permissionsetsteps.png "Permission Sets")
 2.	Click on “Create Permission Set”
 3.	Provide the below details in “Create Permission Set” page
     *	Name: 
@@ -296,7 +278,8 @@ Password: welcome1
 
 **Create a new Menu:**
 
-1.	Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+1.	Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
+        ![Menus](../images/menus.png "Menus")
 2.	Click on “Create Navigation Menu”
 3.	Provide the below details in “Create Navigation Menu” page
     *	Name: 
@@ -323,9 +306,10 @@ Password: welcome1
 
 **Create a new Responsibility:**
 
-1.	Navigate to User Management -> Responsibility
-    ![User management](../images/ko1.png "User management")
+1.	Navigate to EBS Home Page -> User Management responsibility -> Responsibility
+        ![Responsibility](../images/responsibilitypath.png "Responsibility")
 2.	Click on “Create Responsibility”
+        ![Create Responsibility](../images/createresponsibility.png "Create Responsibility")
 3.	Provide the below details in “Create Responsibility” page
     *	Responsibility Name: 
                                                                ```
@@ -359,8 +343,10 @@ Password: welcome1
 
 **Create a new Access role and Grant:**
 
-1.	Navigate to User Management -> Roles & Role Inheritance
+1.	Navigate to EBS Home Page -> User Management responsibility -> Roles & Role Inheritance
+    ![Roles and Role Inheritance](../images/rolesandroleinheritance.png "Roles and Role Inheritance")
 2.	Click on “Create Role”
+    ![Create Role](../images/createrole.png "Create Role")
 3.	Provide the below details in “Create Role” page
     *	Application: 
                                                                ```
@@ -379,70 +365,80 @@ Password: welcome1
   	    <copy>P2P Access Role</copy>
             ```
 4.	Click on “Create Grant” button
+    ![Create Grant](../images/creategrantinrole.png "Create Grant")
 5.	Click on “Save and Proceed” button in the confirmation dialog to create the grant
+    ![Create Grant](../images/saveandproceedgrant.png "Create Grant")
 6.	Now, the user is navigated to “Create Grant” page
 7.	Provide the below details:
     *	Name: 
                                                                ```
   	    <copy>P2P Grant</copy>
             ```
-    *	Under security context section, Responsibility: Procure to Pay Operations Manager
+    *	Under security context section, select the Responsibility as: 
+            ```
+  	    <copy>Procure to Pay Operations Manager</copy>
+        ```
+        ![Create Grant](../images/creategrantforp2p.png "Create Grant")
     *	Click on “Next” button
-    *	Provide the permission set as “P2P Permission Set”
+    *	Provide the set as
+            ```
+  	    <copy>P2P Permission Set</copy>
+        ```
+        ![Create Grant](../images/creategrantforp2p1.png "Create Grant")
     *	Click on the “Next” button and then the “Finish” button to create the grant
 8.	Now, upon clicking “Ok” in the confirmation dialog, the user is navigated to the “Update Access Role” page
 9.	Click on “Apply” button
 
     ![Access Role](../images/ss17.png "Access Role")
-    ![Grant](../images/ss18.png "Grant")
 
 **Run Workflow Background Process:**
 
-1.	Navigate to System Administration -> Schedule Requests
+1.	Navigate to EBS Home Page -> System Administration responsibility -> Schedule Requests
+    ![Schedule Requests](../images/schedulerequests.png "Schedule Requests")
 2.	Provide the Program Name as “Workflow Background Process”
 3.	Under Parameters section, provide the below details:
     *	Process Deferred: Yes
     *	Process Timeout: No
-        ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
-
+    ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
 4.	Click on “Continue” button and then on “Submit” button
 5.  Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
-
+    ![Workflow Background Process](../images/wfbgprocess.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
-1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-2.	Click on “Clear All Cache” button and click on "Yes" in the pop up
+1.	Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+    ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
 
+2.	Click on “Clear All Cache” button and then click on "Yes"
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
 
 **Assign Access Role to Responsibility:**
 
-1.	Navigate to User Management -> Roles & Role Inheritance
+1.	Navigate to EBS Home Page -> User Management responsibility -> Roles & Role Inheritance
+    ![Roles and Role Inheritance](../images/rolesandroleinheritance.png "Roles and Role Inheritance")
 2.	Search for “Procure to Pay Operations Manager” responsibility
 3.	Select the icon under “View In Hierarchy”
 
     ![Assign Role to Responsibility](../images/ss111.png "Assign Role to Responsibility")
 
-4.  Click on + icon under “Add node”
-    ![Assign Role to Responsibility](../images/addnode.png "Assign Role to Responsibility")
-
+4.  Click on + icon under “Add node”	
+    ![Add Node](../images/addnode.png "Add Node")
 5.  Then search for “P2P Access Role” and click on “Go” button
-    ![Assign Role to Responsibility](../images/accessrole1.png "Assign Role to Responsibility")
-
-
-7. Add the access role to the responsibility by clicking on the icon under quick select column
-    ![Assign Role to Responsibility](../images/accessrole2.png "Assign Role to Responsibility")
-8. We have successfully assigned the access role to the responsibility
+    ![Add Node](../images/accessrole1.png "Add Node")
+6.	Add the access role to the responsibility by clicking on the icon under quick select column
+    ![Add Node](../images/accessrole2.png "Add Node")
+7.  We have successfully assigned the access role to the responsibility
     ![Assign Role to Responsibility](../images/ss112.png "Assign Role to Responsibility")
 
 
 **Assign the Responsibility to User:**
 
-1.	Navigate to User Management -> Users
+1.	Navigate to EBS Home Page -> User Management responsibility -> Users
+    ![Users](../images/userspath.png "Users")
 2.	Provide the User Name as “OPERATIONS” and click on “Go” button
 3.	Click on update icon in the results for OPERATIONS user
+    ![Update User](../images/assignresptouser.png "Update User")
 4.	Click on “Assign Roles” button and add “Procure to Pay Operations Manager”
 5.	Provide the Justification like “New Responsibility for ECC HOL”
 6.  Click on “Apply” button
@@ -453,19 +449,21 @@ Password: welcome1
 
 **Run Workflow Background Process:**
 
-1.	Navigate to System Administration -> Schedule Requests
+1.	Navigate to EBS Home Page -> System Administration responsibility -> Schedule Requests
+    ![Schedule Requests](../images/schedulerequests.png "Schedule Requests")
 2.	Provide the Program Name as “Workflow Background Process”
 3.	Under Parameters section, provide the below details:
-    * Process Deferred: Yes
-    * Process Timeout: No
-4.	Click on “Continue” button and then on “Submit” button
-5.	Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
-
+    *	Process Deferred: Yes
+    *	Process Timeout: No
     ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
+4.	Click on “Continue” button and then on “Submit” button
+5.  Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
+    ![Workflow Background Process](../images/wfbgprocess.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
-1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
+1.	Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+    ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
 2.	Click on “Clear All Cache” button and then click on "Yes"
 
     ![Clear Cache](../images/ss110.png "Clear Cache")
@@ -568,10 +566,6 @@ style="white-space:pre-wrap; word-wrap:break-word"
   </tr>
 
   <tr>
-    <td>Requisitions</td>
-    <td>PO_PCC_ECC_REQUISITIONS</td>
-  </tr>
-  <tr>
     <td>Orders</td>
     <td>PO_PCC_ECC_ORDERS</td>
   </tr>
@@ -585,7 +579,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
 </table>
 </body>
 </html>
-
+13.	Click on “Return to Application” to access the dashboards
 ![Requisitions Dashboard](../images/scratchpadupdated15.png "Requisitions Dashboard")
 
 

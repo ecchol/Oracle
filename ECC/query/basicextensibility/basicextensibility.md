@@ -43,7 +43,15 @@ Password: welcome1
 
 5. The new page will be copied within the same application. Click on the edit icon to edit this new page
     ![Procurement Command Center](../images/ext4.png "Procurement Command Center")
-6. Prefix the page name and page short name with xx and XX respectively, remove the trailing "(1)" as shown in below image and click on "Save"
+6. Change the page name and page short name as mentioned below and click on "Save"
+    - Page Short Name:
+    ```
+  	 <copy>xx-po-pcc-ind-procurement</copy>
+    ```
+    - Page Name:
+    ```
+    <copy>XX Indirect Procurement</copy>
+    ```
      ![Procurement Command Center](../images/ext5.png "Procurement Command Center")
 
 7. Search for "Indirect procurement" on the home page again and click on the page we just copied and renamed to open the page
@@ -73,8 +81,11 @@ This concludes this task, we successfully extended Indirect Procurement dashboar
   	 Username: sysadmin
 Password: welcome1
     ```
-1.	Create a new FND Function for custom Indirect Procurement Dashboard:
-     * Navigate to Functional Administrator -> Core Services -> Function
+2.	Create a new FND Function for custom Indirect Procurement Dashboard:
+     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
+        ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
+        ![Functions Menu](../images/functions.png "Functions Menu")
+
      * Search with Code as 
                                                             ```
   	    <copy>PO_PCC_ECC_IND_PROC</copy>
@@ -106,8 +117,9 @@ Password: welcome1
 
           ![Create Function](../images/b113.png "Create Function") 
 
-2.	Add the new FND Function to PO\_PCC\_HOME\_PAGE menu
-     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+3.	Add the new FND Function to PO\_PCC\_HOME\_PAGE menu
+     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
+        ![Menus](../images/menus.png "Menus")
      * Search with code as
                                        ```
   	    <copy>PO_PCC_HOME_PAGE</copy>
@@ -123,11 +135,11 @@ Password: welcome1
             ```
      * Click on “Apply” button to save the menu
           ![Add Function to Menu](../images/b115.png "Add Function to Menu")
-     * Clear Application Cache:
-        * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-        * Click on “Clear All Cache” button and then click on "Yes"
-          ![Clear Cache](../images/ss110.png "Clear Cache")
- 
+4.  Clear Application Cache:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
+    * Click on “Clear All Cache” button and then click on "Yes"
+        ![Clear Cache](../images/ss110.png "Clear Cache")
 
 ## Task 3: EBS OA Personalization 
 1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
@@ -157,7 +169,7 @@ Password: welcome1
           ![Update Rich Container Details](../images/b119.png "Update Rich Container Details")
 
 6. Click on “Return to Application” to access the dashboard
-          ![Indirect Procurement Dashboard](../images/jk1.png " Indirect Procurement Dashboard")
+          ![Return to Application](../images/jk1.png "Return to Application")
           ![Indirect Procurement Dashboard](../images/b1110.png " Indirect Procurement Dashboard")
 
 

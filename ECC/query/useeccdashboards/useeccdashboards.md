@@ -125,6 +125,7 @@ Password: welcome1
 4. Click on the "Activity Tracker" page
     ![Activity audit](../images/activityaudit2.png "Activity audit")
 
+5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
     ![Activity audit](../images/activityaudit3.png "Activity audit")
 
 ## Task 2: Hands on demo of ECC Fixed Assets
@@ -154,7 +155,7 @@ Password: welcome1
 9. From the "Units assigned by City" chart[The chart title has changed after cascading as it is dynamic], click on "San Francisco" city to track assets by location flexfield segments
     ![Assets Location](../images/fix7.png "Assets Location")
 
-10. In the search bar type "Laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "Laptop" assets. [This is a search feature in ECC called Record Search]
+10. In the search bar type "Laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "Laptop" assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
 
     ![Assets Location](../images/fix8.png "Assets Location")
 
@@ -210,7 +211,7 @@ Password: welcome1
 2. Navigate to Logistics Manager -> Command Center and then to "Track and Trace" dashboard
     ![Move Orders](../images/log1.png "Move Orders")
 
-3. In the Track and Trace dashboard, in Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", within "Inventory Trace Sales Orders" data set, search for three order numbers we know we have received complaints for with respect to packaging. Order numbers: 74699, 74708 and 74700 [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the former].
+3. In the Track and Trace dashboard, in Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", within "Inventory Trace Sales Orders" data set, by clicking on the three vertical dots beside the name of the data set (highlighted in the image below), search for three order numbers we know we have received complaints for with respect to packaging. Order numbers: 74699, 74700, and 74708 [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the former].
 
     ![Track and trace](../images/t01.png "Track and trace")
 
